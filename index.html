@@ -4,7 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <style>
+      body {
+        font-family: tahoma;
+        color: #282828;
+        margin: 0px;
+      }
+
+      .container {
+        margin: auto;
+        padding: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 50px;
+      }
+      .nav-bar {
+        background: linear-gradient(-90deg, #776acf, #8716c0);
+        height: 60px;
+        margin-bottom: 15px;
+      }
+      .addtodo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 50%;
+        height: auto;
+        margin: auto;
+        gap: 10px;
+      }
+
+      ul {
+        text-transform: none;
+        text-decoration: none;
+        margin-left: 200px;
+      }
+
+      .todo {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 20px;
+      }
+
+      .todo p {
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+      }
+      button {
+        border: none;
+        background-color: #1e95ea;
+        color: white;
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+      }
+      .disabledButton {
+        background-color: #d8d8d8;
+      }
+
+      input {
+        width: 100%;
+        height: 50px;
+        font-size: larger;
+      }
+      textarea {
+        width: 100%;
+        height: 60px;
+      }
+
+      .activeTab {
+        color: #8d16c0;
+        text-decoration: underline;
+      }
+    </style>
     <title>vue js</title>
   </head>
   <body>

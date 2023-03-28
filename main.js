@@ -1,6 +1,6 @@
 Vue.component("input-field", {
   template: `
-  <form @submit.prevent="addTodo()">
+  <form @submit.prevent="addTodo()" class='addtodo'>
     <input type="text" placeholder="some thing to do" v-model="todo">
     <button>Add to do</button>
   </form>
@@ -32,7 +32,7 @@ Vue.component("todo", {
     },
   },
   template: `
-    <div>
+    <div class="todo">
       <p>{{text}}</p><button @click="deleteTodo(id)">delete</button>
     </div>
 

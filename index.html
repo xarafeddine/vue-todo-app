@@ -10,16 +10,19 @@
   <body>
     <div class="nav-bar"></div>
     <div id="root">
-      <input-field @add-todo="addTodo"></input-field>
-      <ul>
-        <li v-for="todo in todos" :key="todo.id">
-          <todo
-            :id="todo.id"
-            :text="todo.text"
-            @delete-todo="deleteTodo"
-          ></todo>
-        </li>
-      </ul>
+      <div class="container">
+        <h1>TodoApp</h1>
+        <input-field @add-todo="addTodo"></input-field>
+        <ul>
+          <li v-for="todo in todos" :key="todo.id">
+            <todo
+              :id="todo.id"
+              :text="todo.text"
+              @delete-todo="deleteTodo"
+            ></todo>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="./main.js"></script>
